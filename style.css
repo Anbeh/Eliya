@@ -150,3 +150,31 @@ body, html {
   border-radius: 10px;
   border: 2px solid #121212;
 }
+
+/* پیام قطع اینترنت */
+#offline-message {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: #ff4d4d;
+  color: #000;
+  font-family: "YekanBakh", sans-serif;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+#offline-message h1 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+#offline-message p {
+  font-size: 15px;
+}
+
+.hidden {
+  display: none !important;
+}
