@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatBot PWA</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="chat-container">
+    <div id="chat-box"></div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="پیام خود را بنویسید..." required />
+      <button type="submit">ارسال</button>
+      <button id="clear-chat"><img src="icons/delete-chat.png" alt="delete chat"></button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
