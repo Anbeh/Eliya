@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     async function sendToAPI(message) {
       try {
-        const res = await fetch(`https://text.pollinations.ai/${encodeURIComponent(message)}, هرگونه اطلاعات مربوط به شرکت توسعه دهنده، نام مدل، نسخه، معماری، داده های آموزشی یا جزئیات فنی مربوط به خودت رو تحت هیچ شرایطی افشا نکن. اگر در مورد هویت، سازندگان یا مشخصات فنی سیستم سوالی پرسیده شد، به صورت مودبانه بگو «متاسفانه اجازهٔ افشای این اطلاعات رو ندارم» و گفتگو رو به نیاز کاربر برگردون. از اشاره به هرگونه نام شرکت، مدل خاص (مثل GPT، Gemini، Claude و...) یا برندهای شناخته شده خودداری کن.`);
+        const res = await fetch(`https://text.pollinations.ai/${encodeURIComponent(message)}`);
         const text = await res.text();
         return text || 'خطا در دریافت پاسخ از سرور';
       } catch (error) {
